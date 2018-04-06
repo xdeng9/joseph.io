@@ -1,3 +1,3 @@
-# joseph-deng-homepage
+# Joseph Deng Homepage
 
 Source code for Joseph Deng Homepage.
