@@ -109,6 +109,10 @@ section h2 {
   color: #2e2e2e;
 }
 
+#left-nav:hover {
+  color: #007199;
+}
+
 #mainNav .navbar-nav {
   margin-top: 1rem;
   letter-spacing: 0.0625rem;
@@ -122,8 +126,8 @@ section h2 {
   color: #007199;
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item /*a.nav-link:focus*/ {
+  color: #007199;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
@@ -153,12 +157,14 @@ section h2 {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
-    background: #0074d9;
+    color: #007199;
+    /*color: #2e2e2e;*/
+    /*background: #0074d9;*/
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
-    background: #0074d9;
+    color: #007199;
+    /*color: #2e2e2e;*/
+    background: rgba(0,0,0,.125);
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -167,6 +173,10 @@ section h2 {
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
   }
+}
+
+#header-name {
+  margin-top: -20px;
 }
 
 header {
@@ -191,8 +201,8 @@ header.masthead h2 {
 
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(6rem + 106px);
-    padding-bottom: 6rem;
+    padding-top: calc(6rem + 25px);
+    padding-bottom: 3rem;
   }
   header.masthead h1 {
     font-size: 3em;
@@ -209,6 +219,7 @@ header.masthead h2 {
   border-radius: 50%;
   background-color: #fff;
   border: solid 1px rgba(0,0,0,.125);
+  padding: 0.5rem;
 }
 
 .portfolio {
