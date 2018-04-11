@@ -8,3 +8,4 @@ Source code for Joseph Deng Homepage.
 - I used Fonts Awesome Icons and Google Fonts for styling.
 
 ## License
+This work is released under the MIT License. See LICENSE.md.
