@@ -43,9 +43,9 @@ section h2 {
 }
 
 .btn-social {
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.25rem;
+  width: 2.9rem;
+  height: 2.9rem;
+  font-size: 1rem;
   line-height: 2rem;
 }
 
@@ -323,8 +323,7 @@ form .row:first-child .floating-label-form-group {
 .copyright {
   background-color: #fff;
   border-top: solid 1px rgba(0,0,0,.125);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
 }
 
 a {
@@ -373,4 +372,14 @@ a:focus, a:hover, a:active {
 .img-border {
   border: 1px solid rgba(0,0,0,.125);
   padding: 0.5rem;
+}
+
+.btn-outline-dark {
+  color: #aaa;
+  background-image: none;
+  border-color: #aaa;
+}
+
+.fl-right {
+  float: right;
 }
