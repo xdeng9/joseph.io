@@ -43,8 +43,8 @@ section h2 {
 }
 
 .btn-social {
-  width: 2.9rem;
-  height: 2.9rem;
+  width: 3rem;
+  height: 3rem;
   font-size: 1rem;
   line-height: 2rem;
 }
@@ -71,6 +71,18 @@ section h2 {
 
 #mainNav .navbar-brand {
   color: #2e2e2e;
+}
+
+#collapsed-btn {
+  outline: none;
+}
+
+#collapsed-btn:hover {
+  background: #f5f8fa !important;
+}
+
+#collapsed-btn:focus {
+  background: #f5f8fa !important;
 }
 
 #left-nav:hover {
@@ -195,6 +207,7 @@ header.masthead h2 {
   display: block;
   max-width: 25rem;
   margin-bottom: 15px;
+  outline: none;
 }
 
 .portfolio .portfolio-item:hover {
@@ -326,6 +339,10 @@ form .row:first-child .floating-label-form-group {
   padding-top: 1rem;
 }
 
+small {
+  line-height: 2.8rem;
+}
+
 a {
   color: #18BC9C;
 }
@@ -350,9 +367,9 @@ a:focus, a:hover, a:active {
   background-color: #fff !important;
 }
 
-.text-primary {
+/*.text-primary { mark for deletion
   color: #18BC9C !important;
-}
+}*/
 
 .text-secondary {
   color: #2C3E50 !important;
