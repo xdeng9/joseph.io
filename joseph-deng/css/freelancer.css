@@ -85,10 +85,6 @@ section h2 {
   background: #f5f8fa !important;
 }
 
-#left-nav:hover {
-  /*color: #007199;*/
-}
-
 #mainNav .navbar-nav {
   margin-top: 1rem;
   letter-spacing: 0.0625rem;
@@ -211,7 +207,7 @@ header.masthead h2 {
 }
 
 .portfolio .portfolio-item:hover {
-  background-color: rgba(0,150,204, 0.09);
+  background-color: rgba(0,150,204, 0.13);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -322,7 +318,7 @@ header.masthead h2 {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #18BC9C;
+  /*color: #18BC9C;*/
 }
 
 form .row:first-child .floating-label-form-group {
@@ -344,11 +340,11 @@ small {
 }
 
 a {
-  color: #18BC9C;
+  color: #2e2e2e;
 }
 
 a:focus, a:hover, a:active {
-  color: #128f76;
+  color: #0096cc;
 }
 
 #about-me {
@@ -366,10 +362,6 @@ a:focus, a:hover, a:active {
 .bg-secondary {
   background-color: #fff !important;
 }
-
-/*.text-primary { mark for deletion
-  color: #18BC9C !important;
-}*/
 
 .text-secondary {
   color: #2C3E50 !important;
