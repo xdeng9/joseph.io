@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <div class="menu-container">
+        <div class="menu-top">
+            <div class="level">Level: 1</div>
+            <div class="timer">
+                Time Left: <span class="count-down">60</span>
+            </div>
+            <div class="next-level">
+                Next Level Score: <span class="next-score">150</span>
+            </div>
+            <div class="cur-score">
+              Current Score: <span class="score">0</span>
+            </div>
+            
+        </div>
+        <div class="divider"></div>
+        <div class="menu-bottom">
+            <div class="play-game hover">Start Game</div>
+            <div class="instruction-container hover">Instructions</div>
+            <div class="toggle-sound hover">Sound Off</div>
+            <div class="theme-select">
+                <p>Theme:</p> 
+                <select name="themes" id="themes">
+                    <option value="fruits">Fruits</option>
+                    <option value="animals">Animals</option>
+                    <option value="pirates">Pirates</option>
+                </select>
+            </div>
+            <!-- <div class="game-about hover">About</div> -->
+            <audio id="audio-player" src="sounds/c3.mp3" loop="true"></audio>
+            <audio id="audio-player2" src="sounds/score.wav"></audio>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p class="instruction1-text">
+                    To score points, drag over three or more matching pieces in a row.
+                    Once the pieces are matched, they will disappear and the pieces above the row will drop down. 
+                </p>
+                <br>
+                <p class="instruction2-text">
+                    Initally, you will have 60 seconds to score points. Once you scored enough points, you will advance to the
+                    next level, and additional time will be added to the current remaining time. To win the game, you will have to 
+                    beat all 7 levels (score 1250 or more total points) within the allocated time.
+                </p>
+                <br>
+                <p class="gl">Good luck!</p>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="grid">
+    </div>
+</body>
+</html>
