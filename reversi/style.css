@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(19, 126, 55);
+    min-width: max-content;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.hidden-message {
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: yellow;
+}
+
+.black h1{
+    color: black;
+    margin-top: 50px;
+}
+
+.white h1{
+    color: white;
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a h1:hover {
+    color: #000;
+}
+
+h3 {
+    text-align: center;
+    color: yellow;
+}
+
+.grid {
+    width: 658px;
+    height: 658px;
+    border: 6px solid #fff;
+    border-radius: 10px;
+}
+
+.g {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    font-size:50px;
+    text-align:center;
+    border: 1px solid black;
+    vertical-align:middle
+}
+
+.dg {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: forestgreen;;
+    font-size:50px;
+    text-align:center;
+    border: 1px solid black;
+    vertical-align:middle;
+}
+
+.black-disc {
+  display: inline-block;
+  margin-top: 4px;
+  height: 73px;
+  width: 73px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.white-disc {
+  display: inline-block;
+  margin-top: 4px;
+  height: 73px;
+  width: 73px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 36px;
+}
+
+.hint {
+  display: inline-block;
+  margin-top: 4px;
+  height: 70px;
+  width: 70px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.cell > * {
+    pointer-events: none;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    height: 40px;
+    text-align: center;
+}
