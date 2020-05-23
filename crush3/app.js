@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const gameBtn = document.querySelector('.play-game');
     const sound = document.querySelector('.toggle-sound');
     const instruction = document.querySelector('.instruction-container');
+    const link = document.querySelector('.isDisabled');
     instruction.addEventListener('click', handleModal);
     gameBtn.addEventListener('click', startGame);
     const width = 8;
@@ -18,6 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let colorDragged, colorReplaced, squareDragged, squareToBeReplaced;
     let score = 0, time = 60, timer = null;
     let gameLoop = null;
+
+    link.addEventListener('click', function(event) {
+        if (this.parentElement.classList.contains('isDisabled')) 
+            event.preventDefault();
+    })
 
     function createGrid() {
         for (let i = 0; i < width * width; i++) {
@@ -262,6 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
             curLevel = 3;
             levelDisplay.innerHTML = 'Level: 3';
             nextLevelDisplay.innerHTML = 450;
+            enableLink();
         } 
         
         if (score >= 450) {
@@ -422,6 +429,17 @@ document.addEventListener("DOMContentLoaded", () => {
             addListners();
             gameOn = true;
         }
+    }
+
+    function disableLink() {
+        link.classList.add('isDisabled');
+        link.setAttribute('data-href', link.href);
+        link.href = '';
+    }
+
+    function enableLink() {
+        link.classList.remove('isDisabled');
+        link.href = link.getAttribute('data-href');
     }
 
     function handleModal() {
