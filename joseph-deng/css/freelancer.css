@@ -182,12 +182,14 @@ header.masthead h2 {
 }
 
 #profile {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background-color: #fff;
   border: solid 1px rgba(0,0,0,.125);
-  padding: 0.5rem;
+  position: relative;
+  z-index: 1;
+  /* padding: 0.3rem; */
 }
 
 .portfolio {
@@ -386,4 +388,14 @@ a:focus, a:hover, a:active {
 
 .fl-right {
   float: right;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 0;
 }
