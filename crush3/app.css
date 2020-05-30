@@ -73,6 +73,22 @@ body {
     cursor: pointer;
 }
 
+.gh-li-al {
+    display: flex;
+    padding-bottom: 23px;
+    justify-content: center;
+    align-items: center;
+}
+
+.gh-li-al a {
+    text-decoration: none;
+    color: white;;
+}
+
+#gh {
+    margin-left: 36px;
+}
+
 .menu-container {
   background-color: rgb(71, 91, 203);
   border-radius: 15px;
