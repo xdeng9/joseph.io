@@ -399,3 +399,7 @@ a:focus, a:hover, a:active {
     background-position: 50% 50%;
     z-index: 0;
 }
+
+.pro-link {
+  color: #0096cc;
+}
