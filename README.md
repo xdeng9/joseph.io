@@ -1,6 +1,6 @@
 # Joseph Deng Homepage
 
-Source code for [joedeng.me](joedeng.me).
+Source code for [joedeng.me](https://joedeng.me).
 
 ## Technologies
 - This website is built using template from [Start Bootstrap - Freelancer](https://startbootstrap.com/template-overviews/freelancer/)
