@@ -343,15 +343,39 @@ document.addEventListener("DOMContentLoaded", () => {
         prevLevel = curLevel;
     }
 
+    function displayGameMessage(won) {
+        let message = '';
+        if (won) {
+            message = 'Congratulations!!! You won!';
+        } else {
+            message = `Time is up... your score is ${score} <br/><br/> Better luck next time.`;
+        }
+
+        let modal = document.querySelector('.game-over-modal');
+        let closeBtn = document.querySelector('.go-close');
+        document.getElementById('game-over-message').innerHTML = message;
+            modal.style.display = 'block';
+
+        closeBtn.onclick = function () {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+
     function gameWon() {
         clearInterval(timer);
-        alert('Congratulations!!! You won!')
+        displayGameMessage(true);
         resetGame();
     }
 
     function gameOver() { 
         clearInterval(timer);
-        alert(`Time is up... your score is ${score}`);
+        displayGameMessage(false);
         resetGame();
     }
 
