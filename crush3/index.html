@@ -12,11 +12,26 @@
 </head>
 <body>
     <div class="menu-container">
+        <!-- <h1 id="game-title">Crush 3</h1> -->
+
         <div class="menu-top">
-            <div class="gh-li-al">
-                <a href="https://www.linkedin.com/in/xideng/"><i class="fab fa-linkedin" style="font-size:44px"></i></a>
-                <a href="https://github.com/xdeng9/crush3"><i id="gh" class="fab fa-github-square" style="font-size:44px"></i></a>
+            <div class="play-game hover">Start Game</div>
+            <div class="theme-select">
+                <p>Choose a Theme:</p>
+                <select name="themes" id="themes">
+                    <option value="fruits">Fruits</option>
+                    <option value="animals">Animals</option>
+                    <option value="pirates">Pirates</option>
+                </select>
             </div>
+            <div class="instruction-container hover">Instructions</div>
+            <div class="toggle-sound hover">Sound Off</div>
+            <span class="isDisabled"><a id="bonus-link" target="_blank" href="http://joedeng.me/reversi">Bonus Game</a></span>
+            <audio id="audio-player" src="sounds/c3.mp3" loop="true"></audio>
+            <audio id="audio-player2" src="sounds/score.wav"></audio>
+        </div>
+
+        <div class="menu-bottom">
             <div class="level">Level: 1</div>
             <div class="timer">
                 Time Left: <span class="count-down">60</span>
@@ -27,26 +42,8 @@
             <div class="cur-score">
               Current Score: <span class="score">0</span>
             </div>
-            
         </div>
-        <div class="divider"></div>
-        <div class="menu-bottom">
-            <div class="play-game hover">Start Game</div>
-            <div class="instruction-container hover">Instructions</div>
-            <div class="toggle-sound hover">Sound Off</div>
-            <div class="theme-select">
-                <p>Theme:</p> 
-                <select name="themes" id="themes">
-                    <option value="fruits">Fruits</option>
-                    <option value="animals">Animals</option>
-                    <option value="pirates">Pirates</option>
-                </select>
-            </div>
-            <span class="isDisabled"><a id="bonus-link" target="_blank" href="http://joedeng.me/reversi">Bonus Game</a></span>
-            <audio id="audio-player" src="sounds/c3.mp3" loop="true"></audio>
-            <audio id="audio-player2" src="sounds/score.wav"></audio>
-        </div>
-
+        <!-- <div class="divider"></div> -->
         <div class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -67,7 +64,19 @@
                 <br>
                 <p class="gl">Good luck!</p>
             </div>
-        
+        </div>
+
+        <div class="game-over-modal">
+            <div class="modal-content-go">
+                <span class="go-close">&times;</span>
+                <p id="game-over-message">
+                </p>
+            </div>
+        </div>
+
+        <div class="gh-li-al">
+            <a href="https://www.linkedin.com/in/xideng/"><i class="fab fa-linkedin" style="font-size:60px"></i></a>
+            <a href="https://github.com/xdeng9/crush3"><i id="gh" class="fab fa-github-square" style="font-size:60px"></i></a>
         </div>
     </div>
 
