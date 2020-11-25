@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 1.2</title>
+</head>
+
+<body>
+    <label>
+        How many buttons do you want to create?
+        <form id="user-form" onsubmit="createButtons()">
+            <input id="user-input" type="text" placeholder="e.g. 5">
+            <button>Create</button>
+        </form>
+    </label>
+</body>
+
+<script>
+    var id = 0;
+    function createButtons() {
+        event.preventDefault();
+        var n = document.querySelector("#user-input").value.trim();
+        if (isNaN(n) || n <= 0) alert("Must be a number greater than 0!");
+        for (var i = 0; i < n; i++) {
+            var button = document.createElement("button");
+            button.addEventListener("click", function() {
+                alert("You have clicked on Button " + this.id + "!");
+            });
+            button.textContent = "Button " + id;
+            button.setAttribute("id", id++);
+            document.body.appendChild(button);
+        }
+    }
+</script>
+
+</html>
